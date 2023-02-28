@@ -1,0 +1,66 @@
+.tab {
+  width: 500px;
+}
+.tab-menu {
+  display: flex;
+}
+.tab-menu__item {
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+  list-style: none;
+  width: 100px;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.tab-menu__item:not(:first-child) {
+  border-left: none;
+}
+
+.active {
+  background: #000;
+  color: white;
+}
+
+.tab-content {
+  height: 200px;
+  border: 1px solid #ddd;
+}
+
+.tab-content__item {
+  display: block;
+  font-size: 20px;
+}
+
+.overlay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.modal-inner{
+  width: 500px;
+  padding: 50px;
+  background: #fff;
+  text-align: center;
+}
+
+.realtime-search-input{
+  border: 1px solid green;
+}
